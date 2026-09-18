@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head> </head>
+  <body>
+    <form id="form1">
+      <div>
+
+        <label>Enter your first name: </label>
+        <input type="text" id="firstname" placeholder="name"></input>
+      </div>
+      <div>
+        <label>Enter your last name: </label>
+        <input type="text" id="lastname">
+      </div>
+      <div id="btn"><button onClick="getInput()">submit</button></div>
+
+
+
+    </form>
+    
+    <p id="result"></p>
+
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        
+      }
+      #form1{
+        height: 200px;
+        width: 350px;
+        border: 2px solid black;
+        padding: 50px;
+        padding-top: 150px;
+        margin-top: 20px; 
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      #btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <script>
+      function getInput(){
+        let name = document.getElementById("username").value;
+        document.getElementById("result").textContent=name;
+      }
+      
+    </script>
+  </body>
+</html>
